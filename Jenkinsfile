@@ -13,7 +13,9 @@ pipeline {
             steps {
                 // Run your script file
                 script {
-                    sh './test.sh'
+                    
+			chmod +x test.sh
+			sh './test.sh'
                 }
             }
         }
